@@ -1,0 +1,78 @@
+
+@media only screen and (min-width: 700px) {
+body {
+	margin: 40px;
+	background-color: black;
+}
+.wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr;
+        grid-template-rows: [row] auto [row] auto [row] auto [row] auto [row] auto [row] auto;
+        background-color: black;
+}
+.box {
+        background-color: #999999;
+        color: black;
+        border-radius: 5px;
+	background-image: url("resources/landscape-bg.webp");
+        padding: 20px;
+        font-size: 140%;	
+	font-family: FreeSerifBold;
+}
+    .a {
+	grid-column: col / span 4;
+    	grid-row: row;
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-bottom: 2%;	
+    }
+    .b {
+        grid-column: col / span 4;
+        grid-row: row 2;
+	/* center horizonally */
+	display: flex;
+	justify-content: center;
+	font-size: 60%;
+    }
+    .c {
+        grid-column: col / span 2;
+        grid-row: row 3;
+	padding: 0px;
+    }
+    .d {
+        grid-column: col 3 / span 2;
+        grid-row: row 3;
+    }
+    .e {
+        grid-column: col / span 2;
+        grid-row: row 4;
+	/*certer vertically*/
+	display: flex;
+	align-items: center;
+    }
+    .f {
+        grid-column: col 3 / span 2;
+        grid-row: row 4;
+	padding: 0px;
+    }
+    .g {
+	grid-column: col / span 2;
+	grid-row: row 5;
+	padding: 0px;
+    }
+    .h {
+	grid-column: col 3 / span 2;
+	grid-row: row 5;
+	/*center vertically*/
+	display: flex;
+	align-items: center;
+    }
+    .i {
+        grid-column: col / span 4;
+        grid-row: row 6;
+	font-size: 100%;
+	display: flex;
+	justify-content: center;
+    }
+}

@@ -1,0 +1,86 @@
+
+@media only screen and (min-width: 300px) {
+body {
+	margin: 10px;
+	background-color:black;
+}
+.wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr;
+        grid-template-rows: [row] auto [row] auto [row] auto [row] auto [row] auto [row] auto [row] auto [row] auto;
+        background-color: black;
+}
+.box {
+        background-color: #999999;
+        color: black;
+        border-radius: 5px;
+	background-image: url("resources/portrait-bg-wide.webp");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+        padding: 10px;
+        font-size: 75%;
+	font-family: FreeSerifBold;
+}
+    .a {
+	grid-column: col / span 4;
+    	grid-row: row;
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 3%	
+    }
+    .b {
+        grid-column: col / span 4;
+        grid-row: row 2;
+	/* center horizonally */
+	display: flex;
+	justify-content: center;
+	font-size: 120%
+    }
+    .c {
+        grid-column: col / span 4;
+        grid-row: row 3;
+	padding: 0px;
+	/* remove baseline */
+	line-height: 0;
+    }
+    .d {
+        grid-column: col 3 / span 2 ;
+        grid-row: row 4;
+    }
+    .e {
+        grid-column: col / span 4;
+        grid-row: row 6;
+	/*certer vertically*/
+	display: flex;
+	align-items: center;
+    }
+    .f {
+        grid-column: col / span 4;
+        grid-row: row 5;
+	padding:0px;
+	/* remove baseline */
+	line-height: 0;
+    }
+    .g {
+	grid-column: col / span 4;
+	grid-row: row 7;
+
+	padding: 0px;
+	line-height: 0;
+    }
+    .h {
+	grid-column: col / span 2;
+	grid-row: row 4;
+	/*certer vertically*/
+	display: flex;
+	align-items: center;
+    }
+    .i {
+        grid-column: col / span 4;
+        grid-row: row 8 ;
+	font-size: 50%;
+	display: flex;
+	justify-content: center;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Tommy's Place bar and family restaurant in Port Jefferson New York">
+    <meta charset="utf-8" />
+    <html lang="en">
+    <link rel="icon" type="image/webp" href="resources/favicon.webp"/>
+    <title>Tommy's Place Restaurant & Bar</title>
+  </head>
+  <body>
+    <object id="menu" data="#" type="application/pdf" style="min-height:100vh;width:100%"></object>
+  </body>
+  <script>
+	let currentTime = new Date();
+	let hour = currentTime.getHours();
+	/* console.log(hour); */
+	if (hour > 4 && hour < 22) {
+        	var link = document.getElementById("menu");        
+		link.setAttribute("data", "resources/menus/tommys-place-menu.pdf");
+	} else {       
+		var link = document.getElementById('menu');
+        	link.setAttribute("data", "resources/menus/tommys-place-late-night-menu.pdf");
+	}
+  </script>
+</html>
+

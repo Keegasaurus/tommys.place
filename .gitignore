@@ -1,0 +1,6 @@
+# Ignore anything in resources directory
+resources/
+
+# Ignore .swp and .swp
+*.swp
+*.swo
